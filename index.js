@@ -8,6 +8,7 @@ const app = express();
 app.use(cors()); 
 app.use(express.json());
 
+
 // ✅ Create User
 app.post("/users", async (req, res) => {
   const { name, email } = req.body;
